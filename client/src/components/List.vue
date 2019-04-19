@@ -57,7 +57,7 @@ export default {
             )
         },
         addNewTask() {
-            axios.post('/api/task', {task_name: th})
+            axios.post('/api/task', {task_name: this.taskname})
                 .then((res) => {
                     this.taskname = ''
                     this.getTasks()
